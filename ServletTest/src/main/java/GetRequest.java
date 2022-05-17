@@ -28,7 +28,10 @@ public class GetRequest extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		PrintWriter pw=response.getWriter();
 		
-		pw.println("<h1>Get Req</h1>");
+	   String Name=request.getParameter("Name");
+	   int Id=Integer.parseInt(request.getParameter("Id"));
+		
+		pw.println("Name : "+Name+" I'd : "+Id);
 	}
 
 	/**

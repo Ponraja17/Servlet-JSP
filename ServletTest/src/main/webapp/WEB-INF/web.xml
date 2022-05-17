@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" id="WebApp_ID" version="2.5">
   <display-name>ServletTest</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
@@ -19,4 +19,22 @@
     <servlet-name>GetRequest</servlet-name>
     <url-pattern>/GetRequest</url-pattern>
   </servlet-mapping>
+  <filter>
+    <display-name>Filter1</display-name>
+    <filter-name>Filter1</filter-name>
+    <filter-class>Filter1</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filter1</filter-name>
+    <url-pattern>/Filter1</url-pattern>
+  </filter-mapping>
+  <filter>
+    <display-name>Filter2</display-name>
+    <filter-name>Filter2</filter-name>
+    <filter-class>Filter2</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filter2</filter-name>
+    <url-pattern>/GetRequest</url-pattern>
+  </filter-mapping>
 </web-app>
